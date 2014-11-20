@@ -21,15 +21,6 @@ describe('ComplexCalculator', function() {
     expect(calc.evaluate()).toEqual([7,11]);
   });
 
-  it('should continue adding as evaluate is called', function(){
-    calc.setValue([1,2]);
-    calc.setOperator('+');
-    calc.setValue([2,3]);
-    expect(calc.evaluate()).toEqual([3,5]);
-    expect(calc.evaluate()).toEqual([5,8]);
-    expect(calc.evaluate()).toEqual([7,11]);
-  });
-
   it('should add more than two numbers', function(){
     calc.setValue([1,2]);
     expect(calc.setOperator('+')).toEqual([1,2]);
