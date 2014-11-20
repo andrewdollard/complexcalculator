@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="lib/calculator.js"></script>
+    <script src="lib/calculator_view.js"></script>
+    <style>
+      #calculator {
+        width: 300;
+        margin: 60px auto 0 auto;
+        padding: 20px;
+        border: 1px solid darkgray;
+      }
+      input {
+        display: block;
+        width: 90%;
+        margin: 0 auto 10px auto;
+        font-size: 24px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+      }
+      button {
+        padding: 10px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+  <div id="calculator"></div>
+    <script>
+      new CalculatorView(document.getElementById('calculator'));
+    </script>
+  </body>
+</html>
